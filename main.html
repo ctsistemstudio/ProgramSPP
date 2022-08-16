@@ -1,58 +1,118 @@
+<!doctype html>
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="bootstrap-5.0.2-dist/css/bootstrap.min.css" rel="stylesheet" />
-    <script src="bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
-    <title>Halaman Utama</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Halaman Utama</title>
+
+  <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/sidebars/">
+
+
+
+  <!-- Bootstrap core CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+  <style>
+    .bd-placeholder-img {
+      font-size: 1.125rem;
+      text-anchor: middle;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      user-select: none;
+    }
+
+    @media (min-width: 768px) {
+      .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+      }
+    }
+
+  </style>
+
+
+  <!-- Custom styles for this template -->
+  <link href="" rel="stylesheet">
 </head>
 
 <body>
-    <div>
-        <!-- Nav tabs -->
-        <ul class="nav nav-tabs" id="myTab" role="tablist">
-            <li class="nav-item" role="presentation">
-                <button class="nav-link active" id="Aplikasi-tab" data-bs-toggle="tab" data-bs-target="#Aplikasi"
-                    type="button" role="tab" aria-controls="Aplikasi" aria-selected="true">Aplikasi</button>
-            </li>
-            <li class="nav-item" role="presentation">
-                <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button"
-                    role="tab" aria-controls="profile" aria-selected="false">Profile</button>
-            </li>
-            <li class="nav-item" role="presentation">
-                <button class="nav-link" id="messages-tab" data-bs-toggle="tab" data-bs-target="#messages" type="button"
-                    role="tab" aria-controls="messages" aria-selected="false">Messages</button>
-            </li>
-        </ul>
 
-        <!-- Tab panes -->
-        <div class="tab-content">
-            <div class="tab-pane active" id="Aplikasi" role="tabpanel" aria-labelledby="Aplikasi-tab">
-                <div>
-                    <div class="accordion-body p-5">
-                        <div>
-                            <a name="" id="" class="btn btn-primary m-5" href="#" role="button">Detail Data Siswa</a>
-                        </div>
-                        <div>
-                            <a name="" id="" class="btn btn-primary m-5" href="#" role="button">Button</a>
-                        </div>
-                        <div>
-                            <a name="" id="" class="btn btn-primary m-5" href="#" role="button">Button</a>
-                        </div>
-                    </div>
-                    <div class="accordion-body p-5">
-                        <a name="" id="" class="btn btn-primary m-5" href="#" role="button">Button</a>
-                        <a name="" id="" class="btn btn-primary m-5" href="#" role="button">Button</a>
-                        <a name="" id="" class="btn btn-primary m-5" href="#" role="button">Button</a>
-                    </div>
-                </div>
-            </div>
-            <div class="tab-pane" id="profile" role="tabpanel" aria-labelledby="profile-tab">profile</div>
-            <div class="tab-pane" id="messages" role="tabpanel" aria-labelledby="messages-tab">messages</div>
-        </div>
+
+  <main>
+    <h1 class="visually-hidden">Sidebars examples</h1>
+
+    <div class="d-flex flex-column flex-shrink-0 bg-primary" style="width: 4.5rem;">
+      <a href="/" class="d-block p-3 link-dark text-decoration-none" title="Icon-only" data-bs-toggle="tooltip"
+        data-bs-placement="right">
+        <svg class="bi" width="40" height="32">
+          <use xlink:href="#bootstrap" /></svg>
+        <span class="visually-hidden">Icon-only</span>
+      </a>
+      <ul class="nav nav-pills nav-flush flex-column mb-auto text-center">
+        <li class="nav-item">
+          <a href="#" class="nav-link active py-3 border-bottom" aria-current="page" title="Home"
+            data-bs-toggle="tooltip" data-bs-placement="right">
+            <svg class="bi" width="24" height="24" role="img" aria-label="Home">
+              <use xlink:href="#home" /></svg>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="nav-link py-3 border-bottom" title="Dashboard" data-bs-toggle="tooltip"
+            data-bs-placement="right">
+            <svg class="bi" width="24" height="24" role="img" aria-label="Dashboard">
+              <use xlink:href="#speedometer2" /></svg>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="nav-link py-3 border-bottom" title="Orders" data-bs-toggle="tooltip"
+            data-bs-placement="right">
+            <svg class="bi" width="24" height="24" role="img" aria-label="Orders">
+              <use xlink:href="#table" /></svg>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="nav-link py-3 border-bottom" title="Products" data-bs-toggle="tooltip"
+            data-bs-placement="right">
+            <svg class="bi" width="24" height="24" role="img" aria-label="Products">
+              <use xlink:href="#grid" /></svg>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="nav-link py-3 border-bottom" title="Customers" data-bs-toggle="tooltip"
+            data-bs-placement="right">
+            <svg class="bi" width="24" height="24" role="img" aria-label="Customers">
+              <use xlink:href="#people-circle" /></svg>
+          </a>
+        </li>
+      </ul>
+      <div class="dropdown border-top">
+        <a href="#"
+          class="d-flex align-items-center justify-content-center p-3 link-dark text-decoration-none dropdown-toggle"
+          id="dropdownUser3" data-bs-toggle="dropdown" aria-expanded="false">
+          <img src="https://github.com/mdo.png" alt="mdo" width="24" height="24" class="rounded-circle">
+        </a>
+        <ul class="dropdown-menu text-small shadow" aria-labelledby="dropdownUser3">
+          <li><a class="dropdown-item" href="#">New project...</a></li>
+          <li><a class="dropdown-item" href="#">Settings</a></li>
+          <li><a class="dropdown-item" href="#">Profile</a></li>
+          <li>
+            <hr class="dropdown-divider">
+          </li>
+          <li><a class="dropdown-item" href="#">Sign out</a></li>
+        </ul>
+      </div>
     </div>
+
+
+    <div class="b-example-divider"></div>
+  </main>
+
+
+  <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script src="sidebars.js"></script>
 </body>
 
 </html>
